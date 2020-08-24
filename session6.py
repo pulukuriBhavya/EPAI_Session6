@@ -86,7 +86,7 @@ def cards_conversion(cards):
     return converted_cards
 
             
-def poker(cards = create_cards(vals,suits),set = [3,4,5],player1 = [],player2 = []):
+def poker(cards : "List of cards" = create_cards(vals,suits),set : "List of number of cards" = [3,4,5],player1 : "List of player1 cards" = [],player2 : "List of player 2 cards" = []):
     """Declares the winner among 2 players
     Inputs:
         cards: Deck of cards
