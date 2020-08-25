@@ -1,7 +1,7 @@
 # session6
 Session 6 is concentarted on **First Class Functions Part 1**
 ***
-- This project is 2 players playing Poker game. A deck of cards consists of 52 cards (4 suites and 13 values). Each player is given either 3 or 4 or 5 cards, and the winner is choosen among the 2 players
+- This project is about 2 players playing Poker game. A deck of cards consists of 52 cards (4 suites and 13 values). Each player is given either 3 or 4 or 5 cards, and the winner is choosen among the 2 players
 based on the winning rules. There are 10 hierarchial rules among which Royal Flush is the highest and HighF Card is the least.
 - 1. Royal Flush
 - 2. Straight Flush
