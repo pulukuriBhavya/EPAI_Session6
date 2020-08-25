@@ -1,8 +1,18 @@
-# session6-pulukuriBhavya
+# session6
 Session 6 is concentarted on **First Class Functions Part 1**
 ***
-- **Functional Parameters** consists of **Positional Arguments** and **Keyword Arguments**
-
+- This project is 2 players playing Poker game. A deck of cards consists of 52 cards (4 suites and 13 values). Each player is given either 3 or 4 or 5 cards, and the winner is choosen among the 2 players
+based on the winning rules. There are 10 hierarchial rules among which Royal Flush is the highest and HighF Card is the least.
+- 1. Royal Flush
+- 2. Straight Flush
+- 3. Four of a kind
+- 4. Full House
+- 5. Flush
+- 6. Straight
+- 7. Three of a Kind
+- 8. Two Pair
+- 9. One Pair
+- 10.High Card
 
 ## Getting Started
 ***
@@ -18,13 +28,13 @@ Before string session check if all the required packages (pytest) are installed.
 ### Session 6.py
 ***
 
-Session5.py helps getting hands on concepts of Functional Parameters.
+Session6.py implements poker game with 2 players with the help of First Class Functions.
 
-- time_it() function calculates the average time taken to run a function. Input parameters for time_it() function are function_name (to be called), *args(parameters of the function 'function_name'), repetitions (number of time the function needs to be called), **Kwargs(parameters of the function 'function_name' )
-- squared_power_list() function returns a list constiting of numbers raised to the power of given range. Input parameters for squared_power_list() function are num(number to be raised to the power), start (start of range of power), end( end of range of power).
-- polygon_area() function returns the area of given polygon. Input parameters for polygon_area() function are length(length of side of polygon),sides (number of sides to polygon)
-- temp_converter() function returns the temperature after converting. Input parameters for temp_converter() function are temperature, temp_given_in (temperature given in 'c' or 'f')
-- speed_converter() function returns the speed after conversion. Input parameters for speed_converter() function are speed, dist, time. 
+- create_cards_lambda() function creates a deck of cards using lamba, map and zip functions. Input parameters for create_cards_lambda() are values and suits
+- create_cards() function creates a deck of cards manually. Input parameters for create_cards() are values and suits
+- cards_eval() function takes a set of cards and returns the rank of the set of cards according to the hierarchial order. Input parameters for cards_eval() function is a set of cards
+- cards_conversion() function converts special values of cards like king etc to numerical values. Input parameters for cards_conversion() function is a set of cards
+- poker() function returns the winner among the two players. Input parameters for poker() function are set of cards of 2 palyers. 
 
 ### test_session6.py
 
@@ -38,22 +48,21 @@ test_session5.py consists of 26 test cases which needs to be cleared.
 - test_readme_exists to check if the README file exists
 - test_readme_contents to check if the README content is exceding 400 words
 - test_readme_file_for_formatting() to check for proper formatting
-- test_squared_power_input checks for negative values of power
-- test_polygon_area_sides checks for negative values for sides
-- test_polygon_area_length checks for negative values for length
-- test_temp_converter_temp checks for negative values of temperature
-- test_speed_converter_speed checks for negative values of speed
-- test_polygon_area_size checks for range of sides
-- test_temp_converter_input checks for temperature modes other tha 'c', 'f'
-- test_speed_converter_dist_input checks for modes of distance
-- test_speed_converter_time_input checks for modes of time 
-- test_time_it_input checks for negative repetitions 
-- test_time_it_print checks time_it function by passing print function
-- test_time_it_squared_power_list checks time_it function by passing squared_power_list function
-- test_time_it_polygon_area checks time_it function by passing polygon_area function
-- test_time_it_temp_converter checks time_it function by passing temp_converter function
-- test_time_it_speed_converter checks time_it function by passing speed_converter function
-- test_speed_converter checks if the function returns correct converted speed
-- test_temp_converter checks if the function returns correct converted temperature
-- test_polygon_area checks if the function returns area of polygon calculated correctly
-- test_squared_power_list checks if the function returns squared poer list
+- test_lamda_manual_check to check if the deck of cards are created correct
+- test_create_cards_manual_check to check if the deck of cards are created correct
+- test_annotations_poker_check cheks for annotations of poker function
+- test_docstring_poker_check checks for docstrings of poker function
+- test_docstring_create_cards_check checks for docstrings of create cards function
+- test_random_tests_20_check checks if the program gives right winner among the 2 players for 20 random sets of cards
+- test_3_card_set checks if the program gives right result for sets of 3 cards 
+- test_4_card_set checks if the program gives right result for sets of 4 cards
+- test_5_card_set checks if the program gives right result for sets of 5 cards
+- test_royal_flush checks for Royal Flush
+- test_straight_flush checks for straight flush
+- test_four_of_a_kind checks for four of a kind
+- test_full_house checks for a full house
+- test_flush checks for flush
+- test_straight checks for straight
+- test_three_of_a_kind checks for three of a kind
+- test_two_pair checks for two pairs
+- test_one_pair checks for one pair
